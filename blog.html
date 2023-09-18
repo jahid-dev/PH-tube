@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PH Tube</title>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+<body class="flex justify-center items-center ">
+    <div class="min-h-screen flex items-center justify-center shadow-lg rounded-lg p-8 ">
+        <div class="bg-[#FFF]  p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 text-black">
+            <h1 class="text-5xl text-center mb-9">Blog Q&A</h1>
+            <div class="join join-vertical w-full">
+                <div class="collapse collapse-arrow join-item border border-base-300">
+                  <input type="radio" name="my-accordion-4" checked="checked" /> 
+                  <div class="collapse-title text-xl font-medium">
+                    Question 01: Discuss the scope of var, let, and const
+                  </div>
+                  <div class="collapse-content align-middle"> 
+                    <p>Ans: <br> "We will encounter the concepts of var, let, and const, which are used to declare variables in JavaScript. Here's a brief overview of these variable declaration keywords:
+                        <br>
+                        1. var:
+                        <br>
+                           - var was the original way to declare variables in JavaScript, and it has been around since the early days of the language.
+                           <br>
+                           - Variables declared with var are function-scoped, meaning they are limited in scope to the function in which they are declared.
+                           <br>
+                           - Variables declared with var are also hoisted, which means they are moved to the top of their containing function or global scope during the compilation phase. This can sometimes lead to unexpected behavior.
+                        <br>
+                        2. let:
+                        <br>
+                           - let was introduced in ECMAScript 6 (ES6) and is a more modern way to declare variables in JavaScript.
+                           <br>
+                           - Variables declared with let are block-scoped, which means they are limited in scope to the block (typically denoted by curly braces `{}`) in which they are declared. This includes loops and conditional statements.
+                           <br>
+                           - Unlike var, variables declared with let are not hoisted, which can help prevent some common programming errors.
+                        <br>
+                        3. const:
+                        <br>
+                           - const is also introduced in ES6 and is used to declare constants, which are variables that cannot be reassigned after they are initially assigned a value.
+                           <br>
+                           - Like let, variables declared with const are block-scoped.
+                           <br>
+                           - Constants must be assigned a value when declared, and this value cannot be changed later in the code. 
+                           <br>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border border-base-300">
+                  <input type="radio" name="my-accordion-4" /> 
+                  <div class="collapse-title text-xl font-medium">
+                    Question 02: Tell us the use cases of null and undefined
+                  </div>
+                  <div class="collapse-content"> 
+                    <p>Ans: <br> In JavaScript, null and undefined are two distinct values that are often used to represent missing or non-existent data. While they are similar in some ways, they have different use cases:
+                        <br>
+        
+                        1. undefined:
+                        <br>
+                           - **Implicitly Assigned**: Variables that have been declared but have not been assigned a value are automatically initialized with undefined.
+                           <br>
+                           - **Function Parameters**: If a function is called with fewer arguments than declared parameters, the missing parameters will be undefined.
+                           <br>
+                           - **Object Properties**: When you access an object property that doesn't exist, you get undefined.
+                        
+                           <br>
+                        2. null:
+                        <br>
+                           - **Explicitly Set**: null is a value that you can assign to a variable or a property to explicitly indicate that it has no meaningful value.
+                           <br>
+                           - **Used to Empty Object Properties**: You can assign null to an object property to indicate that it should be considered empty or without a value.
+                           <br>
+                           - **Comparative Use**: null can be used when you want to explicitly check if a variable or property has no meaningful value.
+                        
+                        
+                        </p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border border-base-300">
+                  <input type="radio" name="my-accordion-4" /> 
+                  <div class="collapse-title text-xl font-medium">
+                    Question 03: What do you mean by REST API?
+                  </div>
+                  <div class="collapse-content"> 
+                    <p>Ans: <br> REST API stands for Representational State Transfer Application Programming Interface. It is an architectural style for designing networked applications. Here's what it means:
+                        <br>
+        
+                        Representational State Transfer (REST): <br> REST is a set of constraints or principles for designing networked applications. It was introduced by Roy Fielding in his doctoral dissertation in 2000. RESTful systems are designed around resources, which can be any object or data that needs to be manipulated over a network. These resources are represented using standard data formats like JSON or XML.
+                        <br>
+                        Application Programming Interface (API): <br> An API is a set of rules and protocols that allows different software applications to communicate with each other. It defines the methods and data formats that developers can use to interact with a service or system.</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</body>
+</html>

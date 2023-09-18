@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Tube</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-inter">
+    <header class="max-w-7xl mx-auto mt-4 border-b-2 ">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <img class="lg:w-36 w-24" src="Images/Logo.png" alt="">
+            </div>
+            <div class="navbar-center">
+                <button onclick="sortView()" class="btn  normal-case text-sm lg:text-xl">Sort By View</button>
+
+            </div>
+            <div class="navbar-end">
+                <button class="btn lg:w-20 lg:text-xl text-sm w-14 text-white bg-red-500">
+                    <a href="blog.html" target="_blank">Blog</a>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl  mx-auto">
+        <div id="suggestion-container" class="flex gap-5 mt-14 justify-center m-8"> </div>
+        <!-- card -->
+        <div id="card-container" class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 py-10"></div>
+
+        <div id="no-content" class="flex justify-center"></div>
+    </main>
+
+    <!-- scripts -->
+    <script src="JS/index.js"></script>
+</body>
+
+</html>
